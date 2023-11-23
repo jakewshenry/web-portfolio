@@ -7,9 +7,54 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
-h1,
+header {
+  background-color: #67568c;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 5em;
+}
+
+main {
+  grid-area: main;
+  padding: 1em;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #67568c;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
 h2,
 h3,
 h4,
