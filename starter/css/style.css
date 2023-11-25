@@ -17,24 +17,22 @@ body {
 header {
   background-color: #67568c;
   grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1em;
 }
 
 h1 {
-  margin-right: 21em; /* Adjust the margin as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
   color: #ffffff;
 }
 
-.headshot{
+.headshot {
   width: 100px;
+  margin-bottom: -20px; /* Adjust the margin as needed */
 }
 
 nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Adjust alignment for smaller screens */
 }
 
 nav ul {
@@ -42,10 +40,11 @@ nav ul {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-direction: column; /* Stack items vertically */
 }
 
 nav li {
-  margin-right: 5em;
+  margin-bottom: 10px; /* Adjust the margin as needed */
   color: #ffffff;
   font-size: 20px;
   position: relative;
@@ -65,7 +64,6 @@ nav a::before {
   width: 100%;
   background-color: #ffffff;
   position: absolute;
-  top: -10px;
   left: 0;
   transform: scaleX(0); /* Initially set to zero width */
   transition: transform 0.3s ease; /* Add a transition effect */
@@ -98,4 +96,32 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+h1 {
+  margin-right: 18em; /* Adjust the margin as needed */
+  margin-bottom: 0px;
+}
+
+nav {
+  align-items: center;
+}
+
+nav ul {
+  flex-direction: row; /* Display horizontally on larger screens */
+}
+
+nav li {
+  margin-bottom: 0px; /* Adjust the margin as needed */
+  margin-right: 5em;
+}
 }
