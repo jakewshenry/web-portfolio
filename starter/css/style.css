@@ -31,7 +31,7 @@ h1 {
 }
 
 .headshot {
-  width: 100px;
+  width: 20%;
 }
 
 nav {
@@ -108,11 +108,17 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
 }
 
 .container {
   flex-direction: row;
+}
+
+.headshot {
+  width: 20%;
+  min-width: 75px; /* Set a minimum width */
+  min-height: 75px; /* Set a minimum height */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
 h1 {
