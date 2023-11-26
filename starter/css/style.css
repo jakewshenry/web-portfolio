@@ -20,6 +20,11 @@ header {
   padding: 1em;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   margin-bottom: 10px; /* Adjust the margin as needed */
   color: #ffffff;
@@ -27,7 +32,6 @@ h1 {
 
 .headshot {
   width: 100px;
-  margin-bottom: -20px; /* Adjust the margin as needed */
 }
 
 nav {
@@ -107,9 +111,13 @@ p {
   padding: 2em;
 }
 
+.container {
+  flex-direction: row;
+}
+
 h1 {
-  margin-right: 18em; /* Adjust the margin as needed */
   margin-bottom: 0px;
+  padding: 1em;
 }
 
 nav {
