@@ -73,8 +73,9 @@ nav a:hover::before {
 }
 
 .hero-banner {
-height: 300px;
-background-image: url(/starter/images/02-hero-bg.jpg);
+height: 200px;
+background-image: url(/starter/images/marble.jpg);
+background-size: cover;
 }
 
 h2 {
@@ -87,43 +88,77 @@ h2 {
   'about-me about-me-text about-me-text about-me-text'
   'work work-text work-text work-text'
   'contact-me contact-me-text contact-me-text contact-me-text'
-  'cv cv cv cv';
+  'cv cv-image cv-image cv-image';
+}
+
+.page-section {
+  position: relative;
+}
+
+.page-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 75%;
+  width: 4px; /* Adjust the width of the divider line */
+  background-color: #67568c; /* Adjust the color of the divider line */
+}
+
+/* Adjust the styles for better alignment */
+#about-me-text::after,
+#work-text::after,
+#contact-me-text::after,
+#cv-image::after {
+  content: none;
 }
 
 #about-me {
   grid-area: about-me;
   min-height: 200px;
+  text-align: right;
+  padding: 2em
 }
 
 #about-me-text {
   grid-area: about-me-text;
+  padding: 2em;
 }
 
 #work {
   grid-area: work;
   min-height: 200px;
+  text-align: right;
+  padding: 2em
 }
 
 #work-text {
   grid-area: work-text;
+  padding: 2em;
   }
 
 #contact-me {
   grid-area: contact-me;
   min-height: 200px;
+  text-align: right;
+  padding: 2em
 }
 
 #contact-me-text {
   grid-area: contact-me-text;
-}
-
-#contact-me {
-  grid-area: contact-me;
-  min-height: 200px;
+  padding: 2em;
 }
 
 #cv {
   grid-area: cv;
+  min-height: 200px;
+  text-align: right;
+  padding: 2em
+}
+
+#cv-image {
+  grid-area: cv-image;
+  padding: 2em;
 }
 
 footer {
