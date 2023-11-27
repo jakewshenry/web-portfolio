@@ -73,12 +73,33 @@ nav a:hover::before {
 }
 
 .hero-banner {
-height: 200px;
-background-image: url(/starter/images/marble.jpg);
+  height: 200px;
+  background-image: url(/starter/images/marble.jpg);
+  position: relative;
 }
 
-h2 {
+.hero-banner h2 {
   color: #000000;
+  position: relative;
+  z-index: 1; /* Ensure the text is above the background */
+}
+
+.hero-banner h2::before {
+  content: ''; /* Create the pseudo-element */
+  position: absolute;
+  top: -10px; /* Adjust the top position for padding */
+  left: -10px; /* Adjust the left position for padding */
+  width: calc(100% + 20px); /* Adjust width for padding */
+  height: calc(100% + 20px);
+  background-color: #84a8e8; /* Adjust background color and opacity as needed */
+  z-index: -1; /* Place the background behind the text */
+}
+
+#subtitle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 2em;
 }
 
 .page-wrapper {
@@ -136,6 +157,7 @@ h2 {
 #work-text {
   grid-area: work-text;
   padding: 2em;
+  min-height: 200px;
 
   display: grid;
   grid-template-areas: 
@@ -144,6 +166,11 @@ h2 {
   'small3 small4';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr 1fr;
+  }
+
+  #main-project {
+    grid-area: main-project;
+    background-color: black;
   }
 
 #contact-me {
