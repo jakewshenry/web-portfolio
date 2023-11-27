@@ -75,7 +75,6 @@ nav a:hover::before {
 .hero-banner {
 height: 200px;
 background-image: url(/starter/images/marble.jpg);
-background-size: cover;
 }
 
 h2 {
@@ -85,10 +84,12 @@ h2 {
 .page-wrapper {
   display: grid;
   grid-template-areas: 
-  'about-me about-me-text about-me-text about-me-text'
-  'work work-text work-text work-text'
-  'contact-me contact-me-text contact-me-text contact-me-text'
-  'cv cv-image cv-image cv-image';
+  'about-me about-me-text'
+  'work work-text'
+  'contact-me contact-me-text'
+  'cv cv-image';
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .page-section {
@@ -135,6 +136,14 @@ h2 {
 #work-text {
   grid-area: work-text;
   padding: 2em;
+
+  display: grid;
+  grid-template-areas: 
+  'main-project main-project'
+  'small1 small2'
+  'small3 small4';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
   }
 
 #contact-me {
