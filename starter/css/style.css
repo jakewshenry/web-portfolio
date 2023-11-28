@@ -157,7 +157,6 @@ nav a:hover::before {
 #work-text {
   grid-area: work-text;
   padding: 2em;
-  min-height: 200px;
 
   display: grid;
   grid-template-areas: 
@@ -171,6 +170,26 @@ nav a:hover::before {
   #main-project {
     grid-area: main-project;
     background-color: black;
+  }
+
+  #small1 {
+    grid-area: small1;
+    background-color: red;
+  }
+
+  #small2 {
+    grid-area: small2;
+    background-color: blue;
+  }
+
+  #small3 {
+    grid-area: small3;
+    background-color: yellow;
+  }
+
+  #small4 {
+    grid-area: small4;
+    background-color: green;
   }
 
 #contact-me {
