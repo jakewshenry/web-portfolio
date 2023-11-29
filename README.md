@@ -32,9 +32,9 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Usage
 
- ![Screenshot of desktop (large screen)](./starter/images/SS5.png)
+ ![Screenshot of desktop (large screen)](./assets/images/SS5.png)
 
- ![Screenshot of mobile view (small screen)](./starter/images/SS6.png)
+ ![Screenshot of mobile view (small screen)](./assets/images/SS6.png)
 
 ## Credits
 
