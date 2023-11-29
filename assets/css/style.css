@@ -82,7 +82,7 @@ nav a:hover::before {
 /* Styling for the hero banner section */
 .hero-banner {
   height: 200px;
-  background-image: url(/starter/images/marble.jpg);
+  background-image: url(/assets/images/marble.jpg);
   position: relative;
 }
 
@@ -194,32 +194,32 @@ nav a:hover::before {
 
   #main-project {
     grid-area: main-project;
-    background-image: url(/starter/images/02-portfolio-4.jpg);
+    background-image: url(/assets/images/02-portfolio-4.jpg);
     margin: 0.5em;
     
   }
 
   #small1 {
     grid-area: small1;
-    background-image: url(/starter/images/02-portfolio-1.jpg);
+    background-image: url(/assets/images/02-portfolio-1.jpg);
     margin: 0.5em;
   }
 
   #small2 {
     grid-area: small2;
-    background-image: url(/starter/images/02-portfolio-2.jpg);
+    background-image: url(/assets/images/02-portfolio-2.jpg);
     margin: 0.5em;
   }
 
   #small3 {
     grid-area: small3;
-    background-image: url(/starter/images/02-portfolio-3.jpg);
+    background-image: url(/assets/images/02-portfolio-3.jpg);
     margin: 0.5em;
   }
 
   #small4 {
     grid-area: small4;
-    background-image: url(/starter/images/02-run-buddy.jpg);
+    background-image: url(/assets/images/02-run-buddy.jpg);
     margin: 0.5em;
   }
 
